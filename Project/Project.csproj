@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{343AE5E3-1E41-4721-A363-EB5527917D4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PLL\AddService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\AddService.Designer.cs">
+      <DependentUpon>AddService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Add_Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Add_Rooms.Designer.cs">
+      <DependentUpon>Add_Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Admin_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Admin_Booking.Designer.cs">
+      <DependentUpon>Admin_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Book_A_Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Book_A_Service.Designer.cs">
+      <DependentUpon>Book_A_Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\ComboService.cs" />
+    <Compile Include="PLL\ConfirmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\ConfirmOrder.Designer.cs">
+      <DependentUpon>ConfirmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Confirm_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Confirm_Booking.Designer.cs">
+      <DependentUpon>Confirm_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\ConfrimBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\ConfrimBooking.Designer.cs">
+      <DependentUpon>ConfrimBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\DeleteEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\DeleteEmp.Designer.cs">
+      <DependentUpon>DeleteEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\DeleteRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\DeleteRoom.Designer.cs">
+      <DependentUpon>DeleteRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Booking_Details2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Booking_Details2.Designer.cs">
+      <DependentUpon>Booking_Details2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Booking_Variables.cs" />
+    <Compile Include="PLL\DeleteService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\DeleteService.Designer.cs">
+      <DependentUpon>DeleteService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\EditService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\EditService.Designer.cs">
+      <DependentUpon>EditService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Edit_Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Edit_Rooms.Designer.cs">
+      <DependentUpon>Edit_Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Employee_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Employee_Add.Designer.cs">
+      <DependentUpon>Employee_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Guest_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Guest_Booking.Designer.cs">
+      <DependentUpon>Guest_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Guest_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Guest_Details.Designer.cs">
+      <DependentUpon>Guest_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Guest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Guest.Designer.cs">
+      <DependentUpon>Guest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Guest_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Guest_Panel.Designer.cs">
+      <DependentUpon>Guest_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\HotelRoom.cs" />
+    <Compile Include="PLL\Orderlist.cs" />
+    <Compile Include="PLL\Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Roomviewvar.cs" />
+    <Compile Include="PLL\Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Service.Designer.cs">
+      <DependentUpon>Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\Services.cs" />
+    <Compile Include="PLL\UpdateEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\UpdateEmp.Designer.cs">
+      <DependentUpon>UpdateEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLL\ViewEmpVar.cs" />
+    <Compile Include="PLL\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLL\Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PLL\AddService.resx">
+      <DependentUpon>AddService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Add_Rooms.resx">
+      <DependentUpon>Add_Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Admin_Booking.resx">
+      <DependentUpon>Admin_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Book_A_Service.resx">
+      <DependentUpon>Book_A_Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\ConfirmOrder.resx">
+      <DependentUpon>ConfirmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Confirm_Booking.resx">
+      <DependentUpon>Confirm_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\ConfrimBooking.resx">
+      <DependentUpon>ConfrimBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\DeleteEmp.resx">
+      <DependentUpon>DeleteEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\DeleteRoom.resx">
+      <DependentUpon>DeleteRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\DeleteService.resx">
+      <DependentUpon>DeleteService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Booking_Details2.resx">
+      <DependentUpon>Booking_Details2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\EditService.resx">
+      <DependentUpon>EditService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Edit_Rooms.resx">
+      <DependentUpon>Edit_Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Employee_Add.resx">
+      <DependentUpon>Employee_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Guest_Booking.resx">
+      <DependentUpon>Guest_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Guest_Details.resx">
+      <DependentUpon>Guest_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Guest.resx">
+      <DependentUpon>Guest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Guest_Panel.resx">
+      <DependentUpon>Guest_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Service.resx">
+      <DependentUpon>Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\UpdateEmp.resx">
+      <DependentUpon>UpdateEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLL\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hotel.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Hotel_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Hotel.mdf</DependentUpon>
+    </Content>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLLL\BLLL.csproj">
+      <Project>{9004cb1d-dda8-4f64-ac6d-378b57f5d82e}</Project>
+      <Name>BLLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DALL\DALL.csproj">
+      <Project>{a9805695-64fd-4dab-88bd-34493805c1ef}</Project>
+      <Name>DALL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\variable\variable.csproj">
+      <Project>{72616870-7643-4683-9ad1-8445dd3668ed}</Project>
+      <Name>variable</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
